@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <table border="1">
+        <tr>
+            <td colspan="2"><center><label for="">กรอกข้อมูล</label></center></td>
+        </tr>
+        <tr>
+        <td><form action="index.html" method="got">
+            <iabel for="">ชื่อ - นามสกุล</iabel></td>
+        <td><input type="text" placeholder=""></td>
+        </tr>
+        <tr>
+            <td><label for="">รหัสผ่าน</label></td>
+            <td><input type="password"></td>
+        </tr>
+        <tr>
+            <td><label for="">สี</label></td>
+            <td><input type="color"></td>
+        </tr>
+        <tr>
+            <td><label for="">อายุ</label></td>
+            <td><input type="number" min="1" max="99" value="1" ></td>
+        </tr>
+        <tr>
+            <td><label for="">วันที่</label></td>
+            <td><input type="datetime-local"></td>
+        </tr>
+    </table>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="" method="get">
+        <label for="">Username</label>
+        <input type="text">
+        <br>
+        <label for="">Password</label>
+        <input type="password">
+        <br>
+        <label for="">Age</label>
+        <input type="number" min="1" max="100">
+        <br>
+        <label for="">phone number = 123-456-7890</label>
+        <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="09x-xxx-xxxx" required>
+        <br>
+        <label for="">เกมที่ชอบ</label>
+        <select name="" id="">
+            <option value="ROV">ROV</option>
+            <option value="GTA">GTA</option>  
+            <option value="LOL">LOL</option>  
+        </select>
+        <br>
+        <label for="">กิจกรรมที่ชอบ</label>
+        <input type="checkbox" value="กิน">กิน
+        <input type="checkbox" value="นอน">นอน
+        <input type="checkbox" value="เล่นเกม">เล่นเกม
+        <br>
+        <label for="">โตขึ้นอยากทำอาชีพอะไร</label>
+        <input type="radio" name="work" value="ช่างหัวมัน">ช่างหัวมัน
+        <input type="radio" name="work" value="ช่างหัวคน">ช่างหัวคน
+        <input type="radio" name="work" value="เจ้าของค้ามนุษย์">เจ้าของค้ามนุษย์
+        <input type="radio" name="work" value="เจ้าของค้าของเถื่อน">เจ้าของค้าของเถื่อน
+        <br>
+        <input type="submit" value="บันทึกข้อมูล">
+        <input type="reset">
+    </form>
+</body>
+</html>
